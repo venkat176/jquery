@@ -1,0 +1,36 @@
+body{
+    /* background-color: grey; */
+    background-image: url('log8.png');
+    background-repeat: no-repeat;
+    background-size: 100%;
+
+}
+#first{
+    /* width: 300px; */
+    align-content: center;
+    float: left;
+    /* border: 1px solid black; */
+    padding: 70px;
+    margin-left: 35%;
+    margin-top: 80px;
+    background-color: honeydew;
+    opacity: 0.9;
+}
+#btnlog{
+    float: right;
+    padding: 8px;
+    width: 70%;
+    background-color: lightslategray;
+}
+#btnlog:hover{
+    opacity: 0.8;
+
+}
+.error_msg{
+    color:red;
+}
+#msg{
+    clear: both;
+    text-align: center;
+    margin-right: 600px;
+}

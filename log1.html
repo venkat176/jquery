@@ -1,0 +1,56 @@
+<html>
+
+<head>
+    <title>login successfull</title>
+    <style>
+        h2 {
+            color: yellow;
+            text-align: center;
+            margin-top: 300px;
+        }
+
+        body {
+            /* background-color: honeydew; */
+            background-image: url(log7.jpg);
+            background-repeat: no-repeat;
+            background-size: 100%;
+        }
+
+        img {
+            width: 30%;
+            height: auto;
+            margin-left: 500px;
+        }
+
+        #btnlogout {
+            /* float: right; */
+            background-color: rgba(255, 0, 0, 0.897);
+            padding: 5px;
+            margin-left: 630px;
+            width: 80px;
+            border-radius: 20px;
+        }
+
+        #btnlogout:hover {
+            opacity: 0.8;
+        }
+    </style>
+    <script src="script/jquery-3.4.1.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("#btnlogout").click(function () {
+                window.location.href = "login.html";
+            });
+        });
+    </script>
+</head>
+
+<body>
+    <h2><q>You'r Successfully logged in </q></h2>
+    <!-- <img src="log5.jpg"> -->
+    <div>
+        <button type="button" id="btnlogout">Logout</button>
+    </div>
+</body>
+
+</html>

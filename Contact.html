@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Contact Us</title>
+    <link type="text/css" rel="stylesheet" href="contact.css">
+    <script src="script/jquery-3.4.1.min.js"></script>
+    <script src="contact.js"></script>
+    <meta name="viewport" content="width=device-width initial-scale=1.0">
+</head>
+<div class="right">
+
+</div>
+
+<body>
+    <h1>Contact Us</h1>
+    <img src="imagescontact.jpg">
+    <div class="left">
+        <fieldset class="feild ">
+            <legend>Xencia</legend>
+            <form onsubmit="validateForm()" id="formsubmit">
+                <div class="row">
+                    <label for="contact">Contact Type:</label>
+                    <select id="dhr">
+                        <!-- <option value="select>select</option> -->
+                        <option value="select">select</option>
+                        <option value="HR">HR</option>
+                        <option name=Finance onclick="myFin()" value="Finance">Finance</option>
+                    </select>
+                </div>
+                <div class="row">
+                    <label for="Contact Name">Contact Name:</label>
+                    <input type="text" value="" placeholder="enter Contact Name" id="conname">
+                </div>
+                <div class="row">
+                    <label for="Email">Email:</label>
+                    <input type="email" value="" placeholder="enter Email id" id="gmail">
+                </div>
+                <div class="row">
+                    <label for="mobile">Mobile no:</label>
+                    <input type="tel" value="" placeholder="enter mobile no.." maxlength="10" id="mobnum">
+                </div>
+                <div class="row">
+                    <span><label for="reason">Reasaon:</label><textarea id="reas" type="text" value=""
+                            placeholder="enter your Reason here" rows="5" cols="50"></textarea></span>
+            </form>
+    </div>
+    <div class="buttn">
+        <button type="button" id="getValues">Submit</button>
+        <button type="button" id="clearValues">Clear</button>
+        <button type="button" id="moveToNewPage">Cancel</button>
+    </div>
+    </feildset>
+    </div>
+
+    <p id="jsondata"></p>
+
+    <footer>
+        <p>Venkat.xencia&copy;2019</p>
+    </footer>
+
+</body>
+
+</html>

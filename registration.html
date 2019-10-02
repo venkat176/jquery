@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Registration form</title>
+    <link type="text/css" rel="stylesheet" href="reg.css">
+    <script src="script/jquery-3.4.1.min.js"></script>
+    <script src="regs.js" type="text/javascript"></script>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.1/dist/jquery.validate.js" ></script> -->
+
+</head>
+
+<body>
+    <header>
+        <h1>Registration Form:</h1>
+    </header>
+    <!-- <img src="reg.jpg"> -->
+    <fieldset id="regform">
+        <legend>Register Here</legend>
+        <form id="formsubmit" name="registration" method="POST">
+        <table>
+            <tr>
+                <td><label>Firstname:</label></td>
+                <td><label><input type="text" class="txtn" placeholder="enter firstname" id="txtfirstname" minlength="3"  name="fname" value="" required/></td>
+                    <h3 id="usercheck"></h3>
+            <tr>
+                <td><label>Lastname:</label></td>
+                <td><input type="text" placeholder="enter lastname" id="txtlastname" value="" name="lname" minlength="3" required/></td>
+                
+            </tr>
+            </tr>
+            <tr>
+                <td><label>Gender:</label></td>
+                <td><input type="radio" value="Male" name="gender">Male<input type="radio" name="gender" value="Female"
+                        name="gender">female</td>
+            </tr>
+            <tr>
+                <td><label>Mobile No:</label></td>
+                <td><input type="tel" id="txtnum" name="mobile" placeholder="enter mobile number" maxlength="10"
+                        value="" /></td>
+            </tr>
+            <tr>
+                <td><label>Age:</label></td>
+                <td><input type="number" id="numage" placeholder="enter age" value="" minlength="1" maxlength="2" name=
+                    "age" required /></td>
+            </tr>
+            <tr>
+                <td><label>State:</label></td>
+                <td><select id="dstate">
+                        <option value="select">select</option>
+                        <option value="Andhra">Andhra</option>
+                        <option value="Karnataka">Karnataka</option>
+                        <option value="Tamilnadu">Tamilnadu</option>
+                        <option value="Kerala">Kerala</option>
+                    </select>
+            </tr>
+            <tr>
+                <td><label>Address:</label></td>
+                <td><textarea value="comment" id="rgform" rows="5" cols="50"
+                        placeholder="enter text here..." minlength="10" required></textarea></td>
+            </tr>
+        </table><br><br>
+        <!-- </form> -->
+        <div class="button">
+            <button type="button"  id="getValues" >Submit</button>
+            <button type="button"  id ="clearValues" >Reset</button>
+            <button type="button"  id="moveToNewPage" >Cancel</button>
+        </div><br><br><br>
+    </fieldset>
+
+
+    <table class="tab">
+
+        <thead>
+            <tr>
+                <td>Firstname</td>
+                <td>Lastname</td>
+                <td>Gender</td>
+                <td>Mobile</td>
+                <td>Age</td>
+                <td>State</td>
+                <td>Address</td>
+            </tr>
+        </thead>
+
+
+        <tbody id="rowsdata">
+
+        </tbody>
+
+    </table>
+
+    <div>
+        <ul id="ulListItem">
+
+        </ul>
+    </div>
+    <footer>
+        <p>Venkat.xencia&copy;2019</p>
+    </footer>
+</body>
+
+</html>
